@@ -39,7 +39,7 @@ async def start_diagnosis(
     """
     if not symptoms or not symptoms.strip():
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
             detail="Symptoms / problem description is required."
         )
 
