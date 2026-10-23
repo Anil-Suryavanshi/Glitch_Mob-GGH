@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #0a0e17;
+    --card-dark: #111827;
+    --border-dark: #1f293d;
+    --neon-cyan: #00f0ff;
+    --neon-magenta: #ff007f;
+    --neon-amber: #f59e0b;
+    --neon-emerald: #10b981;
+  }
+
+  body {
+    background-color: #080c14;
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: "JetBrains Mono", "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Glow effects */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
+}
+
+.glow-magenta {
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.25);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
+}
